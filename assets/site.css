@@ -134,6 +134,23 @@ p{margin:0}
 .split .ui-grid{grid-template-columns:1fr}
 .split .kpi b{font-size:clamp(24px,2.4vw,32px)}
 
+/* header gradient fades: each page's own ATOM color (k-a/t/o/m), or all four (k-all) */
+.fade{position:relative;isolation:isolate}
+.fade::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(70% 85% at 88% -10%,color-mix(in srgb,var(--fb) 28%,transparent),transparent 70%),
+             radial-gradient(45% 65% at 0% 0%,color-mix(in srgb,var(--fb) 12%,transparent),transparent 70%),
+             linear-gradient(180deg,var(--ft) 0%,var(--bg) 88%)}
+.fade.k-a{--fb:var(--a-b);--ft:var(--a-tint);--fd:var(--a)}
+.fade.k-t{--fb:var(--t-b);--ft:var(--t-tint);--fd:var(--t)}
+.fade.k-o{--fb:var(--o-b);--ft:var(--o-tint);--fd:var(--o)}
+.fade.k-m{--fb:var(--m-b);--ft:var(--m-tint);--fd:var(--m)}
+.fade.k-all::before{background:radial-gradient(38% 75% at 6% -15%,rgba(126,166,47,.20),transparent 70%),
+  radial-gradient(38% 75% at 36% -25%,rgba(68,105,218,.17),transparent 70%),
+  radial-gradient(38% 75% at 66% -20%,rgba(109,81,226,.17),transparent 70%),
+  radial-gradient(38% 75% at 96% -10%,rgba(218,114,84,.20),transparent 70%),var(--bg)}
+.fade .display{background:linear-gradient(100deg,var(--head) 5%,var(--fd) 70%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.06em;display:inline-block}
+.fade.k-all .display{background-image:linear-gradient(95deg,#466715 0%,#304DAE 35%,#5536A8 68%,#9A4430 100%)}
+
 /* product screenshots */
 .shot{position:relative;margin:0;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(31,29,29,.45),0 0 0 1px rgba(31,29,29,.08)}
 .shot img{width:100%;height:auto}
