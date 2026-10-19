@@ -84,7 +84,7 @@ p{margin:0}
 
 /* hero */
 .hero{padding:120px 0 0;overflow:hidden}
-.hero .display{max-width:15ch}
+.hero .display{max-width:19ch}
 .hero .lede{margin-top:28px}
 .hero-stage{position:relative;margin-top:80px}
 .hero-stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:42%;background:var(--bg)}
