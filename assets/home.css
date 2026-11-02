@@ -53,16 +53,16 @@
 .hx-proof .stars svg{width:15px;height:15px;fill:#F2A020}
 .hx-proof p{font-size:14.5px;line-height:1.45;color:var(--body)}
 .hx-proof p b{color:var(--ink);font-weight:600}
-.hx-doc{position:relative;max-width:480px;margin:0 0 0 auto;width:100%}
+.hx-doc{position:relative;max-width:460px;margin:0 0 0 auto;width:100%}
 .hx-doc .ph{position:relative;border-radius:28px;overflow:hidden;box-shadow:0 60px 120px -50px rgba(26,25,23,.55),0 0 0 1px rgba(26,25,23,.06)}
-.hx-doc .ph img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%}
+.hx-doc .ph img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 30%}
 .hx-doc .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(26,25,23,.35))}
 .hx-doc .tag{position:absolute;top:18px;left:50%;transform:translateX(-50%);z-index:1;display:inline-flex;align-items:center;justify-content:center;text-align:center;white-space:nowrap;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:var(--ink);font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:8px 16px;border-radius:99px}
-.hx-doc .card{position:relative;z-index:2;margin:-150px 22px 0;background:#fff;border-radius:22px;padding:26px 26px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;box-shadow:0 30px 60px -30px rgba(26,25,23,.5),0 0 0 1px rgba(26,25,23,.05)}
+.hx-doc .card{position:relative;z-index:2;margin:-110px 22px 0;background:#fff;border-radius:22px;padding:26px 26px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;box-shadow:0 30px 60px -30px rgba(26,25,23,.5),0 0 0 1px rgba(26,25,23,.05)}
 .hx-doc .stars{display:flex;justify-content:center;gap:2px;margin-bottom:12px}
 .hx-doc .stars svg{width:17px;height:17px;fill:#F2A020}
-.hx-doc blockquote{font-size:18px;line-height:1.5;font-weight:500;color:var(--ink);letter-spacing:-.01em}
-.hx-doc .who{display:flex;flex-direction:column;align-items:center;margin:14px 0 18px}
+.hx-doc blockquote{font-size:17px;line-height:1.5;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+.hx-doc .who{display:flex;flex-direction:column;align-items:center;margin:12px 0 16px}
 .hx-doc .who b{font-size:16px;font-weight:700;color:var(--ink)}
 .hx-doc .who span{font-size:13.5px;color:var(--mut)}
 .hx-doc .card .cta{width:100%;justify-content:center;padding:0 18px}
@@ -306,7 +306,7 @@
   .hx-days{grid-template-columns:1fr}
   .hx-panel .feat{grid-template-columns:1fr}
   .hx-res .top b{font-size:28px}
-  .hx-doc .card{margin:-110px 12px 0;padding:22px 18px 20px}
+  .hx-doc .card{margin:-80px 12px 0;padding:22px 18px 20px}
   .hx-doc blockquote{font-size:16.5px}
   .dock .btn{white-space:nowrap}
   .hx-trust b{font-size:22px}
