@@ -66,6 +66,20 @@
 .hx-doc .who{display:flex;flex-direction:column;align-items:center;margin:12px 0 16px}
 .hx-doc .who b{font-size:16px;font-weight:700;color:var(--ink)}
 .hx-doc .who span{font-size:13.5px;color:var(--mut)}
+.hx-doc .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%;margin:0 0 16px}
+.hx-doc .nums div{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--mist);border-radius:14px;padding:10px 6px}
+.hx-doc .nums b{font-size:19px;font-weight:700;letter-spacing:-.02em;color:var(--lime-d);line-height:1.1;white-space:nowrap}
+.hx-doc .nums span{font-size:11.5px;color:var(--mut);line-height:1.25;margin-top:3px}
+.hx-case{background:#fff;border-radius:24px;padding:28px;margin-bottom:20px;box-shadow:0 30px 60px -36px rgba(26,25,23,.4),0 0 0 1px rgba(26,25,23,.05)}
+.hx-case .hd{display:flex;align-items:center;justify-content:center;gap:14px;text-align:left;margin-bottom:20px}
+.hx-case .hd img{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none}
+.hx-case .hd .kick{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral-d)}
+.hx-case .hd h3{font-size:22px;line-height:1.2;margin:2px 0 0}
+.hx-case .st{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.hx-case .st div{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:var(--mist);border-radius:18px;padding:18px 12px}
+.hx-case .st b{font-size:clamp(26px,2.6vw,34px);font-weight:700;letter-spacing:-.03em;line-height:1.05;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;white-space:nowrap}
+.hx-case .st span{font-size:13.5px;color:var(--body);line-height:1.35;margin-top:6px}
+.hx-case .nt{font-size:12.5px;color:var(--mut);text-align:center;margin-top:14px}
 .hx-doc .card .cta{width:100%;justify-content:center;padding:0 18px}
 
 /* trust strip */
@@ -309,6 +323,8 @@
   .hx-res .top b{font-size:28px}
   .hx-doc .card{margin:-80px 12px 0;padding:22px 18px 20px}
   .hx-hero .hx-pill{display:none}
+  .hx-doc .nums b{font-size:16px}.hx-doc .nums span{font-size:10.5px}
+  .hx-case{padding:22px 16px}.hx-case .st{grid-template-columns:1fr 1fr;gap:10px}.hx-case .hd h3{font-size:19px}
   .hx-mcook{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:6px 16px 6px 6px;background:#fff;border-radius:99px;box-shadow:0 10px 24px -14px rgba(26,25,23,.4),0 0 0 1px rgba(26,25,23,.06);text-decoration:none;color:var(--body);font-size:13px;line-height:1.3;text-align:center}
   .hx-mcook img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
   .hx-mcook>span{display:flex;flex-direction:column;align-items:center}
