@@ -1,9 +1,9 @@
 <!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>m</title>
 <body style="margin:0;background:#777;display:flex;gap:16px;padding:8px;align-items:flex-start">
-<iframe id="a" src="/?m=a" width="390" height="880" style="border:0;background:#fff"></iframe>
-<iframe id="b" src="/?m=b" width="390" height="880" style="border:0;background:#fff"></iframe>
-<iframe id="c" src="/?m=c" width="390" height="880" style="border:0;background:#fff"></iframe>
+<iframe id="a" data-k="a" width="390" height="880" style="border:0;background:#fff"></iframe>
+<iframe id="b" data-k="b" width="390" height="880" style="border:0;background:#fff"></iframe>
+<iframe id="c" data-k="c" width="390" height="880" style="border:0;background:#fff"></iframe>
 <script>
 const y=new URLSearchParams(location.search);
-for(const id of ["a","b","c"]){const f=document.getElementById(id);f.onload=()=>{const v=+(y.get(id)||0);f.contentWindow.scrollTo(0,v);}}
+for(const id of ["a","b","c"]){const f=document.getElementById(id);f.src="/?m="+id+"&v="+(y.get("v")||"0");f.onload=()=>{const v=+(y.get(id)||0);f.contentWindow.scrollTo(0,v);}}
 </script></body>
