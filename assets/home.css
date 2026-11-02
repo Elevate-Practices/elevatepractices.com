@@ -36,11 +36,11 @@
 .hx .night .fine{color:#B8B2C8}
 
 /* hero */
-.hx-hero{background:radial-gradient(1100px 620px at 85% -12%,rgba(242,102,76,.12),transparent 60%),radial-gradient(900px 600px at 8% 8%,rgba(26,107,224,.10),transparent 55%),radial-gradient(700px 500px at 40% 110%,rgba(110,79,232,.08),transparent 60%),var(--mist);padding:72px 0 96px;overflow:hidden}
+.hx-hero{background:radial-gradient(1100px 620px at 85% -12%,rgba(242,102,76,.12),transparent 60%),radial-gradient(900px 600px at 8% 8%,rgba(26,107,224,.10),transparent 55%),radial-gradient(700px 500px at 40% 110%,rgba(110,79,232,.08),transparent 60%),var(--mist);padding:56px 0 80px;overflow:hidden}
 .hx-hero .in{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
 .hx-pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:14px;color:var(--mut);text-align:center}
 .hx-pill b{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;background:var(--ink);color:#fff;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
-.hx-hero h1{font-size:clamp(46px,6.4vw,80px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:24px 0 22px}
+.hx-hero h1{font-size:clamp(40px,5vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:24px 0 22px}
 .hx-hero .lead{font-size:clamp(18px,1.6vw,20px);line-height:1.6;color:var(--body);max-width:560px}
 .hx-hero .lead .a{color:var(--lime-d);font-weight:600}.hx-hero .lead .t{color:var(--azure);font-weight:600}.hx-hero .lead .o{color:var(--violet);font-weight:600}.hx-hero .lead .m{color:var(--coral-d);font-weight:600}
 .hx-hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
@@ -294,7 +294,7 @@
   .hx-close{padding:56px 22px;border-radius:26px}
 }
 @media (max-width:640px){
-  .hx-hero h1{font-size:44px}
+  .hx-hero h1{font-size:40px}
   .hx-hero .acts{flex-direction:column;width:100%}
   .hx-hero .acts a,.hx .row-cta a{width:100%}
   .hx-fields{grid-template-columns:1fr 1fr}
