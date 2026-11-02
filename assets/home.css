@@ -302,6 +302,11 @@
   .hx-days{grid-template-columns:1fr}
   .hx-panel .feat{grid-template-columns:1fr}
   .hx-res .top b{font-size:28px}
-  .hx-chip{padding:10px 12px}.hx-chip b{font-size:18px}
+  .hx-stage{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .hx-stage>figure{grid-column:1/-1}
+  .hx-chip,.hx-chip.c1,.hx-chip.c2{position:static;padding:10px 8px;border-color:rgba(26,25,23,.06)}
+  .hx-chip.c2{order:2}.hx-chip.c1{order:3}
+  .hx-chip b{font-size:17px}.hx-chip span{font-size:11.5px}
+  .dock .btn{white-space:nowrap}
   .hx-trust b{font-size:22px}
 }
