@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Dental Reps: Free Practice Scorecard and Referral Rewards | Elevate Practices</title>
+<meta name="description" content="Dental reps: give your offices a free 3-minute ATOM Practice Scorecard with your personal link and QR code, and earn $2,500 for every practice that becomes an Elevate client.">
+<link rel="canonical" href="https://elevatepractices.com/reps/"><meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Elevate Practices">
+<meta property="og:title" content="For Dental Reps | Elevate Practices"><meta property="og:description" content="Dental reps: give your offices a free 3-minute ATOM Practice Scorecard with your personal link and QR code, and earn $2,500 for every practice that becomes an Elevate client."><meta property="og:url" content="https://elevatepractices.com/reps/">
+<meta property="og:image" content="https://elevatepractices.com/assets/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1F1D1D">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=pr1103b">
+</head>
+<body class="has-chat">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+<a class="brand" href="/" aria-label="Elevate Practices home"><img src="/assets/img/logo-color.png" alt="Elevate Practices" width="720" height="290"></a>
+<nav class="nav" aria-label="Main"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a></nav>
+<div class="top-cta"><a class="login" href="https://app.elevatepractices.com/">Client login</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book</a>
+<details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></summary><nav class="menu-panel" aria-label="Mobile"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a><a href="/blog/">Blog</a><a href="https://app.elevatepractices.com/">Client login</a></nav></details></div>
+</div></header>
+<style>
+.rp-wrap{max-width:900px;margin:0 auto;padding:0 32px}
+.rp-head{padding:96px 0 40px;text-align:center}
+.rp-head .lede{margin:20px auto 0}
+.rp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+.rp-box{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:32px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.rp-box h2{font-size:22px;margin-bottom:10px}
+.rp-box p{color:var(--muted);font-size:16px}
+.rp-big{font-size:48px;font-weight:700;letter-spacing:-.03em;color:var(--head);line-height:1;margin:6px 0 10px}
+.rp-steps{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.rp-steps li{counter-increment:s;background:var(--soft);border-radius:22px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:15px;color:var(--head)}
+.rp-steps li::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:#fff;font-weight:700;margin-bottom:10px}
+.rp-form{background:#fff;border:2px solid var(--book);border-radius:var(--r-card);padding:40px 32px;margin:40px 0 0;text-align:center}
+.rp-form h2{font-size:clamp(24px,3vw,30px)}
+.rp-form>p{color:var(--muted);margin:10px auto 0;max-width:520px}
+.rp-f{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:24px;text-align:left}
+.rp-f label{display:block;font-size:14px;font-weight:600;color:var(--head);margin-bottom:8px}
+.rp-f input{width:100%;min-height:52px;border:1px solid var(--line);border-radius:14px;padding:0 16px;font:500 17px var(--font);color:var(--head)}
+.rp-form .btn{width:auto;min-width:260px;margin-top:20px}
+.rp-err{color:var(--m-ink);font-weight:600;font-size:15px;min-height:1.4em;margin-top:10px}
+.rp-kit{display:none;margin-top:28px;padding-top:28px;border-top:1px solid var(--line)}
+.rp-kit.on{display:block}
+.rp-kit .qr{width:180px;height:180px;margin:0 auto}
+.rp-kit .qr svg{width:100%;height:100%;display:block}
+.rp-link{display:flex;gap:8px;max-width:620px;margin:20px auto 0}
+.rp-link input{flex:1;min-height:48px;border:1px solid var(--line);border-radius:14px;padding:0 14px;font:500 15px var(--font);color:var(--head);background:var(--soft)}
+.rp-link button,.rp-acts .btn-quiet{min-height:48px;border-radius:999px;border:0;padding:0 20px;font:600 15px var(--font);background:var(--soft);color:var(--head);cursor:pointer}
+.rp-acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}
+.rp-acts .btn{margin-top:0}
+.rp-note{font-size:13px;color:var(--muted);text-align:center;max-width:640px;margin:28px auto 96px}
+/* printable handout */
+#handout{display:none}
+@media print{
+ @page{size:letter;margin:0}
+ body>*:not(#handout){display:none!important}
+ html,body{margin:0;padding:0;background:#fff}
+ #handout{display:flex;width:8.5in;height:11in;box-sizing:border-box;overflow:hidden;flex-direction:column;align-items:center;justify-content:space-between;padding:.7in .75in .6in;text-align:center;font-family:var(--font);color:#3B3637;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .top,.dock,.foot,iframe,.lc_text-widget,#lc_text-widget{display:none!important}
+}
+.ho-logo{width:2.6in}
+.ho-kick{font-size:11pt;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#6E6565;margin-top:.35in}
+.ho-h{font-size:34pt;font-weight:700;letter-spacing:-.02em;line-height:1.05;margin:.12in 0 0;color:#1F1D1D}
+.ho-p{font-size:14pt;line-height:1.45;color:#514C4D;max-width:6.2in;margin:.2in auto 0}
+.ho-atom{display:flex;gap:.12in;justify-content:center;margin-top:.25in}
+.ho-atom span{display:inline-flex;align-items:center;justify-content:center;height:.36in;padding:0 .18in;border-radius:.2in;font-size:11pt;font-weight:600;color:#fff}
+.ho-qr{width:2.7in;height:2.7in;margin:.3in auto 0;padding:.12in;border:2px solid #E3DFDF;border-radius:.2in;background:#fff}
+.ho-qr svg{width:100%;height:100%;display:block}
+.ho-scan{font-size:13pt;font-weight:600;margin-top:.14in;color:#1F1D1D}
+.ho-url{font-size:11pt;color:#6E6565;margin-top:.04in}
+.ho-by{font-size:12pt;margin-top:.22in;color:#3B3637}
+.ho-by b{color:#1F1D1D}
+.ho-foot{font-size:10pt;color:#6E6565;border-top:1px solid #E3DFDF;padding-top:.15in;width:100%}
+@media (max-width:760px){.rp-grid,.rp-steps,.rp-f{grid-template-columns:1fr}.rp-link{flex-direction:column}}
+@media (max-width:600px){.rp-wrap{padding:0 16px}.rp-head{padding:56px 0 24px}.rp-box,.rp-form{padding:28px 20px}.rp-form .btn,.rp-acts .btn,.rp-acts button{width:100%;min-width:0;display:inline-flex}}
+</style>
+<main id="main">
+<section class="rp-head"><div class="rp-wrap">
+<span class="eyebrow">For dental reps</span>
+<h1 class="display">Give your doctors a free practice score.</h1>
+<p class="lede">Hand your offices something useful: a 3-minute ATOM Practice Scorecard that shows where the practice is leaking money. When a practice you send becomes an Elevate client, you're rewarded.</p>
+</div></section>
+
+<section><div class="rp-wrap">
+<div class="rp-grid">
+<div class="rp-box"><h2>What the practice gets</h2><p>A free score across accounting, team, operations and marketing, their collections per treatment room against Elevate's client practices, and a free Snapshot Review with our team.</p></div>
+<div class="rp-box"><h2>What you get</h2><div class="rp-big">$2,500</div><p>for every practice you refer that becomes a client. If your company doesn't allow referral payments, we credit it to the practice instead. Your choice.</p></div>
+</div>
+<ol class="rp-steps">
+<li>Enter your name below to get your personal link and QR code.</li>
+<li>Print the handout or text your link to an office.</li>
+<li>Practices that score through your link are credited to you.</li>
+</ol>
+
+<div class="rp-form" id="rp-form">
+<h2>Get your link and handout</h2>
+<p>Your QR code and printable handout are ready the moment you click.</p>
+<form id="rp" novalidate>
+<div class="rp-f">
+<div><label for="rp-fn">First name</label><input id="rp-fn" autocomplete="given-name"></div>
+<div><label for="rp-ln">Last name</label><input id="rp-ln" autocomplete="family-name"></div>
+<div><label for="rp-co">Company</label><input id="rp-co" autocomplete="organization" placeholder="Benco, Patterson, Henry Schein…"></div>
+</div>
+<p class="rp-err" id="rp-err" role="alert"></p>
+<button class="btn btn-book" type="submit">Create my link</button>
+</form>
+<div class="rp-kit" id="rp-kit" aria-live="polite">
+<div class="qr" id="rp-qr"></div>
+<div class="rp-link"><input id="rp-url" readonly aria-label="Your personal scorecard link"><button type="button" id="rp-copy">Copy link</button></div>
+<div class="rp-acts"><button class="btn btn-book" type="button" id="rp-print">Print or save the handout as a PDF</button><button class="btn-quiet" type="button" id="rp-text">Text my link</button></div>
+</div>
+</div>
+<p class="rp-note">Rewards are paid when a referred practice signs on as a new Elevate client. One reward per practice; credit goes to the first rep link the practice uses. Questions? Call Chris at (435) 680-9777 or email info@elevatepractices.com.</p>
+</div></section>
+</main>
+
+<div id="handout" aria-hidden="true">
+<div style="display:flex;flex-direction:column;align-items:center">
+<img class="ho-logo" src="/assets/img/logo-color.png" alt="Elevate Practices">
+<div class="ho-kick">Free for private dental practices</div>
+<div class="ho-h">How does your practice<br>really score?</div>
+<p class="ho-p">Take the 3-minute ATOM Practice Scorecard. See where your practice is strong, where it's leaking money and how your collections per treatment room compare with Elevate's client practices.</p>
+<div class="ho-atom"><span style="background:#557A1B">Accounting</span><span style="background:#3A5BC7">Team</span><span style="background:#6A4BC4">Operations</span><span style="background:#B4523A">Marketing</span></div>
+<div class="ho-qr" id="ho-qr"></div>
+<div class="ho-scan">Scan to get your free score</div>
+<div class="ho-url" id="ho-url"></div>
+<div class="ho-by" id="ho-by"></div>
+</div>
+<div class="ho-foot">Elevate Practices &middot; The DSO alternative for private practice &middot; (435) 680-9777 &middot; elevatepractices.com</div>
+</div>
+
+<script src="/assets/js/qrcode.js"></script>
+<script>
+(function(){
+var BASE=location.origin+'/scorecard/';
+function slug(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');}
+function svg(text){var q=qrcode(0,'M');q.addData(text);q.make();return q.createSvgTag({cellSize:8,margin:0,scalable:true});}
+var url='';
+function make(fn,ln,co,scroll){
+ var code=slug(fn+' '+ln+(co?' '+co:''));
+ url=BASE+'?rep='+code;
+ var q=svg(url);
+ document.getElementById('rp-qr').innerHTML=q; document.getElementById('ho-qr').innerHTML=q;
+ document.getElementById('rp-url').value=url;
+ document.getElementById('ho-url').textContent=url.replace(/^https?:\/\//,'');
+ document.getElementById('ho-by').innerHTML='Shared by <b></b>';
+ document.querySelector('#ho-by b').textContent=fn+' '+ln+(co?', '+co:'');
+ document.getElementById('rp-kit').classList.add('on');
+ try{localStorage.setItem('ep-rep-kit',JSON.stringify({fn:fn,ln:ln,co:co}));}catch(x){}
+ if(scroll)document.getElementById('rp-kit').scrollIntoView({behavior:'smooth',block:'center'});
+}
+document.getElementById('rp').addEventListener('submit',function(e){
+ e.preventDefault();
+ var fn=document.getElementById('rp-fn').value.trim(),ln=document.getElementById('rp-ln').value.trim(),co=document.getElementById('rp-co').value.trim();
+ var err=document.getElementById('rp-err');
+ if(!fn||!ln){err.textContent='Add your first and last name.';return;}
+ err.textContent=''; make(fn,ln,co,true);
+});
+document.getElementById('rp-copy').addEventListener('click',function(){
+ var b=this; var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy link';},1800);};
+ if(navigator.clipboard){navigator.clipboard.writeText(url).then(done,function(){document.getElementById('rp-url').select();});}else{document.getElementById('rp-url').select();}
+});
+document.getElementById('rp-print').addEventListener('click',function(){window.print();});
+document.getElementById('rp-text').addEventListener('click',function(){location.href='sms:?&body='+encodeURIComponent('Here’s a free 3-minute scorecard for your practice from Elevate Practices: '+url);});
+try{var k=JSON.parse(localStorage.getItem('ep-rep-kit')||'null');if(k&&k.fn){document.getElementById('rp-fn').value=k.fn;document.getElementById('rp-ln').value=k.ln;document.getElementById('rp-co').value=k.co||'';make(k.fn,k.ln,k.co,false);}}catch(x){}
+})();
+</script>
+
+<footer class="foot"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img src="/assets/img/logo-white.png" alt="Elevate Practices" width="720" height="279" loading="lazy"></a>
+<p class="tagline">Your corporate partner in private practice.</p>
+<p>37 W 1070 S<br>St. George, UT 84770</p><p style="margin-top:8px"><a href="tel:+14356809777">(435) 680-9777</a><br><a href="mailto:info@elevatepractices.com">info@elevatepractices.com</a></p>
+<div class="social"><a href="https://www.linkedin.com/company/elevate-practices" aria-label="Elevate Practices on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4z"/></svg></a><a href="https://www.facebook.com/elevatepractices" aria-label="Elevate Practices on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a><a href="https://www.instagram.com/elevatepractices" aria-label="Elevate Practices on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 8c-.1-1.6-.4-3-1.6-4.2S17.6 2.2 16 2.1C14.4 2 9.6 2 8 2.1 6.4 2.2 5 2.5 3.8 3.7S2.2 6.4 2.1 8C2 9.6 2 14.4 2.1 16c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4 0-8z"/></svg></a><a href="https://x.com/ElevatePractice" aria-label="Elevate Practices on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3H21l-7 8 8.2 10h-6.4l-5-6.2L5 21H1.8l7.5-8.6L1.5 3H8l4.6 5.7zm-1.1 16h1.8L7.4 4.9H5.5z"/></svg></a></div></div>
+<div><h2>Services</h2><ul><li><a href="/dental-accounting/">Accounting</a></li><li><a href="/dental-team-training/">Team training</a></li><li><a href="/dental-operations/">Operations</a></li><li><a href="/dental-marketing/">Marketing</a></li><li><a href="/de-novo-services/">De novo practices</a></li><li><a href="/accounts-receivable/">Insurance and collections</a></li></ul></div>
+<div><h2>Company</h2><ul><li><a href="/elevate-practices-management-team/">Our team</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/book/">Book a free assessment</a></li><li><a href="https://app.elevatepractices.com/">Client login</a></li></ul></div>
+<div><h2>Legal</h2><ul><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li><li><a href="/dashboard-privacy/">Dashboards privacy</a></li><li><a href="/dashboard-terms/">Dashboards terms</a></li><li><a href="/sitemap/">Sitemap</a></li></ul></div>
+</div>
+<div class="legal"><span>© 2026 Elevate Practices. All rights reserved.</span><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a></div>
+</div></footer>
+<div class="dock"><a class="btn btn-quiet" href="tel:+14356809777"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book online</a></div>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68090188b75db5508153db49"></script>
+</body>
+</html>
