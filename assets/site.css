@@ -370,3 +370,4 @@ p{margin:0}
   .svc-shot{margin-top:40px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.plan .sep{font-size:13.5px;font-weight:600;color:#557A1B;margin-top:4px}
