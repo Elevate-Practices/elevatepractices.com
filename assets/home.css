@@ -391,3 +391,6 @@
 .hx .hx-who.dso{background:rgba(242,102,76,.16);color:#FFB4A6}
 .hx .hx-who.us{background:rgba(111,168,15,.2);color:#C8EB8C}
 .hx-plan.pop .sep{color:#C8EB8C}
+
+.hx-score .sc-more{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin-top:10px;font-size:15px;font-weight:600;color:var(--t-ink, #304DAE);text-decoration:none}
+.hx-score .sc-more:hover{text-decoration:underline}

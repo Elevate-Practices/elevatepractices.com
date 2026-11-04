@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATOM Practice Scorecard: Score Your Dental Practice | Elevate Practices</title>
+<meta name="description" content="Score your dental practice in about three minutes across Accounting, Team, Operations and Marketing, and see how your collections per treatment room compare with Elevate client practices.">
+<link rel="canonical" href="https://elevatepractices.com/scorecard/"><meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Elevate Practices">
+<meta property="og:title" content="ATOM Practice Scorecard | Elevate Practices"><meta property="og:description" content="Score your dental practice in about three minutes across Accounting, Team, Operations and Marketing, and see how your collections per treatment room compare with Elevate client practices."><meta property="og:url" content="https://elevatepractices.com/scorecard/">
+<meta property="og:image" content="https://elevatepractices.com/assets/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1F1D1D">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css?v=pr1103b">
+</head>
+<body class="has-chat">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap top-in">
+<a class="brand" href="/" aria-label="Elevate Practices home"><img src="/assets/img/logo-color.png" alt="Elevate Practices" width="720" height="290"></a>
+<nav class="nav" aria-label="Main"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a></nav>
+<div class="top-cta"><a class="login" href="https://app.elevatepractices.com/">Client login</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book</a>
+<details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></summary><nav class="menu-panel" aria-label="Mobile"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a><a href="/blog/">Blog</a><a href="https://app.elevatepractices.com/">Client login</a></nav></details></div>
+</div></header>
+<style>
+.sc-wrap{max-width:860px;margin:0 auto;padding:0 32px}
+.sc-head{padding:96px 0 40px;text-align:center}
+.sc-head .lede{margin:20px auto 0}
+.sc-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:28px}
+.sc-meta span{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 16px;border-radius:999px;background:var(--soft);font-size:14px;font-weight:500;color:var(--head)}
+.sc-form{padding:24px 0 96px}
+.sc-block{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:32px;margin-top:24px}
+.sc-block h2{font-size:24px;margin-bottom:6px}
+.sc-block>p.sc-sub{color:var(--muted);font-size:15px;margin-bottom:8px}
+.sc-block.a{border-top:6px solid var(--a-b)}.sc-block.t{border-top:6px solid var(--t-b)}.sc-block.o{border-top:6px solid var(--o-b)}.sc-block.m{border-top:6px solid var(--m-b)}
+.sc-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.sc-field label{display:block;font-size:14px;font-weight:600;color:var(--head);margin-bottom:8px}
+.sc-field input,.sc-field select{width:100%;min-height:52px;border:1px solid var(--line);border-radius:14px;padding:0 16px;font:500 17px var(--font);color:var(--head);background:#fff}
+.sc-field input:focus,.sc-field select:focus{outline:2px solid var(--t);outline-offset:1px}
+.sc-field small{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+.sc-q{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
+.sc-q:first-of-type{border-top:0}
+.sc-q legend{float:left;width:auto;padding:0;font-size:16px;color:var(--head);font-weight:500;max-width:440px}
+.sc-q fieldset{border:0;margin:0;padding:0;display:flex;align-items:center;justify-content:space-between;gap:20px;width:100%}
+.sc-opts{display:flex;gap:6px;flex-shrink:0}
+.sc-opts input{position:absolute;opacity:0;pointer-events:none}
+.sc-opts label{display:inline-flex;align-items:center;justify-content:center;min-width:82px;min-height:44px;padding:0 14px;border-radius:999px;background:var(--soft);font-size:14px;font-weight:600;color:var(--head);cursor:pointer;transition:background .15s,color .15s}
+.sc-opts input:checked+label{background:var(--dark);color:#fff}
+.sc-opts input:focus-visible+label{outline:2px solid var(--t);outline-offset:2px}
+.sc-go{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:40px;text-align:center}
+.sc-go .btn{width:auto;min-width:280px}
+.sc-go p{color:var(--muted);font-size:14px}
+.sc-err{color:var(--m-ink);font-weight:600;font-size:15px;min-height:1.4em}
+.sc-res{display:none;padding:0 0 112px}
+.sc-res.on{display:block}
+.sc-total{background:var(--dark);color:var(--on-dark);border-radius:var(--r-big);padding:48px 40px;text-align:center}
+.sc-total .eyebrow{color:var(--on-dark-muted)}
+.sc-total .big{font-size:clamp(64px,10vw,112px);font-weight:700;letter-spacing:-.04em;line-height:1;color:#fff}
+.sc-total .big small{font-size:.32em;font-weight:600;color:var(--on-dark-muted);letter-spacing:0}
+.sc-total h2{color:#fff;font-size:clamp(24px,3vw,32px);margin-top:16px}
+.sc-total p{max-width:560px;margin:12px auto 0;color:var(--on-dark-muted)}
+.sc-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.sc-p{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.sc-p .tag{margin-bottom:8px}
+.sc-p b{font-size:40px;font-weight:700;color:var(--head);letter-spacing:-.03em;line-height:1}
+.sc-st{display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-top:12px;min-height:30px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:600}
+.sc-st::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.sc-st.g{background:#E5F3E0;color:#2F6B1F}.sc-st.y{background:#FBF1D9;color:#7A5A06}.sc-st.r{background:#FBE4E0;color:#A0321F}
+.sc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-card);padding:32px;margin-top:24px}
+.sc-card h3{font-size:22px;margin-bottom:8px}
+.sc-card>p{color:var(--muted);font-size:15px}
+.sc-bar{position:relative;height:14px;border-radius:999px;background:var(--soft);margin:56px 0 40px}
+.sc-bar .fill{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:var(--o-b)}
+.sc-mk{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--head)}
+.sc-mk span{position:absolute;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:12px;font-weight:600;color:var(--head);text-align:center;line-height:1.3}
+.sc-mk.up span{bottom:30px}.sc-mk.dn span{top:30px}
+.sc-mk.you{background:var(--o-ink);width:4px}.sc-mk.you span{color:var(--o-ink)}
+.sc-gap{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.sc-gap div{flex:1 1 200px;background:var(--soft);border-radius:18px;padding:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.sc-gap b{font-size:30px;color:var(--head);letter-spacing:-.02em}
+.sc-gap span{font-size:13px;color:var(--muted);margin-top:4px}
+.sc-fixes{list-style:none;margin:16px 0 0;padding:0;counter-reset:f}
+.sc-fixes li{counter-increment:f;display:grid;grid-template-columns:40px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--line)}
+.sc-fixes li:first-child{border-top:0}
+.sc-fixes li::before{content:counter(f);display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--soft);font-weight:700;color:var(--head)}
+.sc-fixes .tag{margin-bottom:4px;font-size:12px}
+.sc-fixes b{display:block;color:var(--head);font-weight:600}
+.sc-fixes p{color:var(--muted);font-size:15px;margin-top:4px}
+.sc-cta{background:var(--soft);border-radius:var(--r-big);padding:48px 40px;margin-top:24px;text-align:center}
+.sc-cta h3{font-size:clamp(26px,3vw,36px)}
+.sc-cta p{max-width:600px;margin:14px auto 0;color:var(--muted)}
+.sc-cta ul{list-style:none;padding:0;margin:24px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:680px}
+.sc-cta li{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 16px;border-radius:999px;background:#fff;font-size:14px;font-weight:500;color:var(--head)}
+.sc-cta .btn{width:auto;margin-top:28px;min-width:280px}
+.sc-cta .btn+p{font-size:14px;margin-top:12px}
+.sc-again{display:block;margin:28px auto 0;background:none;border:0;font:600 15px var(--font);color:var(--t-ink);cursor:pointer;text-decoration:underline}
+.sc-note{font-size:13px;color:var(--muted);margin-top:24px;text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+@media (max-width:820px){
+ .sc-pillars{grid-template-columns:repeat(2,1fr)}
+ .sc-nums{grid-template-columns:1fr}
+ .sc-q fieldset{flex-direction:column;align-items:stretch;gap:12px}
+ .sc-q legend{float:none;max-width:none}
+ .sc-opts{width:100%}.sc-opts label{flex:1;min-width:0}
+}
+@media (max-width:600px){
+ .sc-wrap{padding:0 16px}
+ .sc-head{padding:56px 0 24px}
+ .sc-block,.sc-card{padding:24px 20px}
+ .sc-total,.sc-cta{padding:36px 20px}
+ .sc-go .btn,.sc-cta .btn{width:100%;min-width:0;display:inline-flex}
+}
+</style>
+<main id="main">
+<section class="sc-head"><div class="sc-wrap">
+<span class="eyebrow">ATOM Practice Scorecard</span>
+<h1 class="display">Score your practice.</h1>
+<p class="lede">Answer 16 questions across accounting, team, operations and marketing. You'll see where your practice is strong, where it's leaking money and how your collections per treatment room compare with Elevate's client practices.</p>
+<div class="sc-meta"><span>About 3 minutes</span><span>No email needed</span><span>Your answers stay on your device</span></div>
+</div></section>
+
+<form class="sc-form" id="sc" novalidate><div class="sc-wrap">
+
+<div class="sc-block">
+<h2>Your numbers</h2>
+<p class="sc-sub">Rough is fine. These two numbers unlock the per-room comparison.</p>
+<div class="sc-nums">
+<div class="sc-field"><label for="col">Monthly collections</label><input id="col" name="col" inputmode="numeric" autocomplete="off" placeholder="$120,000"><small>Average month, this year</small></div>
+<div class="sc-field"><label for="rooms">Treatment rooms in use</label><input id="rooms" name="rooms" inputmode="numeric" autocomplete="off" placeholder="5"><small>Doctor and hygiene operatories</small></div>
+<div class="sc-field"><label for="ovh">Overhead</label><select id="ovh" name="ovh"><option value="">Choose one</option><option value="2">Under 60% of collections</option><option value="1">60% to 68%</option><option value="0">Over 68%</option><option value="u">I'm not sure</option></select><small>Everything except what the owner takes</small></div>
+</div>
+</div>
+
+<div id="sc-qs"></div>
+
+<div class="sc-go">
+<p class="sc-err" id="sc-err" role="alert"></p>
+<button class="btn btn-book" type="submit">See my score</button>
+<p>Free, instant and private. Nothing is sent to us.</p>
+</div>
+</div></form>
+
+<section class="sc-res" id="sc-res" aria-live="polite"><div class="sc-wrap">
+<div class="sc-total">
+<span class="eyebrow">Your ATOM score</span>
+<div class="big" id="r-total">0<small>/100</small></div>
+<h2 id="r-head"></h2>
+<p id="r-sub"></p>
+</div>
+<div class="sc-pillars" id="r-pillars"></div>
+
+<div class="sc-card" id="r-room">
+<h3>Collections per treatment room</h3>
+<p>Monthly collections divided by the rooms you use, compared with 19 Elevate client practices over the last 12 months.</p>
+<div class="sc-bar" id="r-bar"></div>
+<div class="sc-gap" id="r-gap"></div>
+</div>
+
+<div class="sc-card">
+<h3>Your first three fixes</h3>
+<p>The answers that cost you the most points, with what we would do first.</p>
+<ol class="sc-fixes" id="r-fixes"></ol>
+</div>
+
+<div class="sc-cta">
+<span class="eyebrow">Next step</span>
+<h3>Get your full scorecard on a free Snapshot Review.</h3>
+<p>This quick version scores what you know off the top of your head. On a 45-minute call we score more than 20 numbers from your P&amp;L and practice software, show the dollar gap behind each one and hand you a one-page plan to keep.</p>
+<ul><li>Overhead by category</li><li>Collections and A/R</li><li>Hygiene and recare</li><li>Case acceptance</li><li>New patients by source</li><li>Website and Google profile</li></ul>
+<a class="btn btn-book" href="/book/">Book my free Snapshot Review</a>
+<p>No cost and no commitment. Bring your numbers or we'll pull them with you.</p>
+</div>
+<button class="sc-again" type="button" id="sc-again">Change my answers</button>
+<p class="sc-note">Per-room comparison: trailing 12 months of collections per treatment room across 19 Elevate client practices, through October 2026. Median $24,600; top quarter $35,500 and above. Overhead bands are common dental industry targets. This scorecard is a starting point, not financial advice.</p>
+</div></section>
+</main>
+<script>
+(function(){
+var MED=24600, TOP=35500;
+var P={a:'Accounting',t:'Team',o:'Operations',m:'Marketing'};
+var Q=[
+ ['a','pl','I get a P&L by the 15th of the next month, and I read it.','Get a dental P&L every month. By the 15th, with overhead by category, so you can see which lines are high.'],
+ ['a','pay','I know what the practice paid me last month, in salary and profit.','Know your real owner pay. Separate what you earn as the dentist from what the business earns; that number tells you if the practice is working for you.'],
+ ['a','tax','We plan taxes before December, not only file a return in April.','Plan taxes before year end. Entity, retirement and equipment decisions have to happen before December 31 to count.'],
+ ['t','day','My team runs a normal day without texting me.','Get out of the middle. Give each role clear ownership and a daily checklist so decisions stop routing through you.'],
+ ['t','train','Every role has written training and a checklist people actually use.','Write every job down. Role training, a scorecard and a checklist for each seat, so quality doesn\u2019t depend on who is working.'],
+ ['t','hire','New hires follow a set training plan for their first 30 days.','Give new hires a 30-day path. The same onboarding plan for every hire, so new people learn the job fast and stay.'],
+ ['t','huddle','We hold a short team huddle every day.','Huddle every morning. Ten minutes on yesterday\u2019s numbers, today\u2019s openings, unscheduled treatment and who needs help.'],
+ ['o','ins','Insurance is verified before every appointment.','Verify insurance before every visit. Estimates are right, patients aren\u2019t surprised and claims get paid the first time.'],
+ ['o','ratio','We collect at least 98% of what we produce.','Work A/R every week. Insurance aging, patient balances and claims over 30 days; every point under 98% is production you did for free.'],
+ ['o','lists','Someone works the unscheduled treatment and recare lists every week.','Work the lists every week. One person owns unscheduled treatment and overdue recare; it is often the fastest money in the practice.'],
+ ['m','np','I know how many new patients we got last month and where they came from.','Track new patients by source. Every month, so you can put more into what works and stop paying for what doesn\u2019t.'],
+ ['m','call','Every missed new-patient call gets a call back within an hour.','Never miss a new patient call. Text missed callers right away and call back within minutes; a new patient who reaches voicemail often calls the next office.'],
+ ['m','rev','We get new Google reviews every week.','Ask for reviews every day. Text happy patients a review link the same day; recent reviews help Google Maps rankings and calls.'],
+ ['m','web','Our website loads fast on a phone and patients can book online.','Make the website work on a phone. Fast pages and online booking; patients check you out on their phone before they call.']
+];
+var ROOM_FIX=['o','room','Raise collections per treatment room.','Your rooms collect less than Elevate\u2019s median practice. Fill hygiene first, then unscheduled treatment, before adding rooms, staff or marketing.'];
+var ROOM_FIX2=['o','room','Push collections per room into the top quarter.','Your rooms beat Elevate\u2019s median practice but trail the top quarter. Hygiene capacity and case acceptance usually close that gap.'];
+var OVH_FIX=['a','ovh','Bring overhead under 60%.','Review overhead by category against dental benchmarks. Staff, supplies, lab and rent are where it usually hides.'];
+var OVH_UNK=['a','ovh','Know your overhead every month.','If you don\u2019t know your overhead, you can\u2019t control it. A monthly dental P&L shows it as a percentage of collections.'];
+
+var host=document.getElementById('sc-qs'), html='';
+['a','t','o','m'].forEach(function(k){
+ html+='<div class="sc-block '+k+'"><span class="tag '+k+'">'+P[k]+'</span>';
+ Q.forEach(function(q){ if(q[0]!==k) return;
+  var n='q_'+q[1];
+  html+='<div class="sc-q"><fieldset><legend>'+q[2].replace(/&/g,'&amp;')+'</legend><div class="sc-opts">'+
+   [['2','Yes'],['1','Partly'],['0','No']].map(function(o){var id=n+o[0];return '<input type="radio" name="'+n+'" id="'+id+'" value="'+o[0]+'"><label for="'+id+'">'+o[1]+'</label>';}).join('')+
+   '</div></fieldset></div>';
+ });
+ html+='</div>';
+});
+host.innerHTML=html;
+
+function num(id){var v=(document.getElementById(id).value||'').replace(/[^0-9.]/g,'');return v?parseFloat(v):0;}
+function money(v){return '$'+Math.round(v).toLocaleString('en-US');}
+function short(v){return v>=1e6?'$'+(v/1e6).toFixed(1)+'M':'$'+(Math.round(v/100)/10)+'K';}
+function st(s){return s>=75?['g','Strong']:s>=50?['y','Needs work']:['r','Fix first'];}
+
+var form=document.getElementById('sc'), res=document.getElementById('sc-res'), err=document.getElementById('sc-err');
+form.addEventListener('submit',function(e){
+ e.preventDefault();
+ var miss=0, items=[];
+ Q.forEach(function(q){var c=form.querySelector('input[name="q_'+q[1]+'"]:checked'); if(!c){miss++;return;} items.push({k:q[0],v:+c.value,fix:q});});
+ if(miss){err.textContent=miss===1?'One question is still blank.':miss+' questions are still blank.';var first=Q.filter(function(q){return !form.querySelector('input[name="q_'+q[1]+'"]:checked');})[0];var el=document.getElementById('q_'+first[1]+'2');if(el){el.closest('.sc-q').scrollIntoView({behavior:'smooth',block:'center'});}return;}
+ err.textContent='';
+ var ovh=document.getElementById('ovh').value;
+ if(ovh!==''){items.push({k:'a',v:ovh==='u'?0:+ovh,fix:ovh==='u'?OVH_UNK:OVH_FIX});}
+ var col=num('col'), rooms=num('rooms'), cpr=(col>0&&rooms>0)?col/rooms:0;
+ if(cpr){items.push({k:'o',v:cpr>=TOP?2:cpr>=MED?1:0,fix:cpr>=MED?ROOM_FIX2:ROOM_FIX});}
+ var sc={}, tot=0;
+ ['a','t','o','m'].forEach(function(k){var its=items.filter(function(i){return i.k===k;});var s=its.reduce(function(a,i){return a+i.v;},0);sc[k]=Math.round(s/(its.length*2)*100);tot+=sc[k];});
+ var total=Math.round(tot/4);
+ document.getElementById('r-total').innerHTML=total+'<small>/100</small>';
+ var low=['a','t','o','m'].sort(function(x,y){return sc[x]-sc[y];})[0];
+ var head=total>=75?'A strong practice with room to grow.':total>=50?'A solid practice that\u2019s leaking money.':'A practice that\u2019s running on you.';
+ var sub=total>=75?'Your systems are ahead of most practices. The gains now come from the numbers: per-room collections, overhead lines and new-patient sources.':total>=50?'The basics are in place, but '+P[low].toLowerCase()+' is holding the rest back. That is usually where the fastest money is.':'Too much depends on you remembering, checking and deciding. That is fixable, and it is exactly what we build.';
+ document.getElementById('r-head').textContent=head;
+ document.getElementById('r-sub').textContent=sub;
+ document.getElementById('r-pillars').innerHTML=['a','t','o','m'].map(function(k){var s=st(sc[k]);return '<div class="sc-p"><span class="tag '+k+'">'+P[k]+'</span><b>'+sc[k]+'</b><span class="sc-st '+s[0]+'">'+s[1]+'</span></div>';}).join('');
+ var room=document.getElementById('r-room'), bar=document.getElementById('r-bar'), gap=document.getElementById('r-gap');
+ if(cpr){
+  var max=Math.max(TOP*1.25,cpr*1.1), pct=function(v){return Math.min(v/max*100,100);};
+  bar.innerHTML='<div class="fill" style="width:'+pct(cpr)+'%"></div>'+
+   '<div class="sc-mk up" style="left:'+pct(MED)+'%"><span>Median<br>'+short(MED)+'</span></div>'+
+   '<div class="sc-mk up" style="left:'+pct(TOP)+'%"><span>Top quarter<br>'+short(TOP)+'</span></div>'+
+   '<div class="sc-mk dn you" style="left:'+pct(cpr)+'%"><span>You: '+short(cpr)+'</span></div>';
+  var g=cpr<TOP?(TOP-cpr)*rooms*12:0;
+  gap.innerHTML='<div><b>'+money(cpr)+'</b><span>Your collections per room, monthly</span></div>'+
+   (g>0?'<div><b>'+money(g)+'</b><span>More a year if each room collected like Elevate\u2019s top-quarter practices</span></div>':'<div><b>Top quarter</b><span>Your rooms already collect like Elevate\u2019s top-quarter practices</span></div>');
+  room.style.display='';
+ } else {
+  bar.innerHTML=''; gap.innerHTML='<div><b>Add your numbers</b><span>Enter monthly collections and treatment rooms above to see this comparison</span></div>';
+ }
+ var cand=items.filter(function(i){return i.v<2;}).sort(function(x,y){var px=(x.fix[1]==='room'||x.fix[1]==='ovh')?0:1,py=(y.fix[1]==='room'||y.fix[1]==='ovh')?0:1;return x.v-y.v||px-py||sc[x.k]-sc[y.k];});
+ var fx=[],used={};
+ cand.forEach(function(i){if(fx.length<3&&!used[i.k]){fx.push(i);used[i.k]=1;}});
+ cand.forEach(function(i){if(fx.length<3&&fx.indexOf(i)<0)fx.push(i);});
+ function split(t){var j=t.indexOf('. ');return j<0?[t,'']:[t.slice(0,j+1),t.slice(j+2)];}
+ document.getElementById('r-fixes').innerHTML=fx.length?fx.map(function(i){var f=i.fix,sp=(f[1]==='room'||f[1]==='ovh')?[f[2],f[3]]:split(f[3]);return '<li><div><span class="tag '+i.k+'">'+P[i.k]+'</span><b>'+sp[0]+'</b>'+(sp[1]?'<p>'+sp[1]+'</p>':'')+'</div></li>';}).join(''):'<li><div><b>No obvious gaps from these answers.</b><p>The full scorecard checks the numbers behind them, which is where strong practices still find money.</p></div></li>';
+ try{localStorage.setItem('ep-sc',JSON.stringify({t:total,a:sc.a,tm:sc.t,o:sc.o,m:sc.m,cpr:Math.round(cpr)}));}catch(x){}
+ form.style.display='none'; res.classList.add('on');
+ window.scrollTo({top:res.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'});
+});
+document.getElementById('sc-again').addEventListener('click',function(){res.classList.remove('on');form.style.display='';form.scrollIntoView({behavior:'smooth'});});
+form.addEventListener('input',function(){ if(err.textContent) err.textContent=''; });
+})();
+</script>
+
+<footer class="foot"><div class="wrap">
+<div class="foot-grid">
+<div><a class="logo" href="/"><img src="/assets/img/logo-white.png" alt="Elevate Practices" width="720" height="279" loading="lazy"></a>
+<p class="tagline">Your corporate partner in private practice.</p>
+<p>37 W 1070 S<br>St. George, UT 84770</p><p style="margin-top:8px"><a href="tel:+14356809777">(435) 680-9777</a><br><a href="mailto:info@elevatepractices.com">info@elevatepractices.com</a></p>
+<div class="social"><a href="https://www.linkedin.com/company/elevate-practices" aria-label="Elevate Practices on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4z"/></svg></a><a href="https://www.facebook.com/elevatepractices" aria-label="Elevate Practices on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a><a href="https://www.instagram.com/elevatepractices" aria-label="Elevate Practices on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 8c-.1-1.6-.4-3-1.6-4.2S17.6 2.2 16 2.1C14.4 2 9.6 2 8 2.1 6.4 2.2 5 2.5 3.8 3.7S2.2 6.4 2.1 8C2 9.6 2 14.4 2.1 16c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4 0-8z"/></svg></a><a href="https://x.com/ElevatePractice" aria-label="Elevate Practices on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3H21l-7 8 8.2 10h-6.4l-5-6.2L5 21H1.8l7.5-8.6L1.5 3H8l4.6 5.7zm-1.1 16h1.8L7.4 4.9H5.5z"/></svg></a></div></div>
+<div><h2>Services</h2><ul><li><a href="/dental-accounting/">Accounting</a></li><li><a href="/dental-team-training/">Team training</a></li><li><a href="/dental-operations/">Operations</a></li><li><a href="/dental-marketing/">Marketing</a></li><li><a href="/de-novo-services/">De novo practices</a></li><li><a href="/accounts-receivable/">Insurance and collections</a></li></ul></div>
+<div><h2>Company</h2><ul><li><a href="/elevate-practices-management-team/">Our team</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/book/">Book a free assessment</a></li><li><a href="https://app.elevatepractices.com/">Client login</a></li></ul></div>
+<div><h2>Legal</h2><ul><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li><li><a href="/dashboard-privacy/">Dashboards privacy</a></li><li><a href="/dashboard-terms/">Dashboards terms</a></li><li><a href="/sitemap/">Sitemap</a></li></ul></div>
+</div>
+<div class="legal"><span>© 2026 Elevate Practices. All rights reserved.</span><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a></div>
+</div></footer>
+<div class="dock"><a class="btn btn-quiet" href="tel:+14356809777"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book online</a></div>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68090188b75db5508153db49"></script>
+</body>
+</html>
