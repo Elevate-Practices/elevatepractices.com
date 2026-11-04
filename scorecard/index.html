@@ -87,6 +87,12 @@
 .sc-fixes .tag{margin-bottom:4px;font-size:12px}
 .sc-fixes b{display:block;color:var(--head);font-weight:600}
 .sc-fixes p{color:var(--muted);font-size:15px;margin-top:4px}
+.sc-gate{background:#fff;border:2px solid var(--book);border-radius:var(--r-card);padding:40px 32px;margin-top:24px;text-align:center}
+.sc-gate h3{font-size:clamp(24px,3vw,30px)}
+.sc-gate>p{color:var(--muted);max-width:520px;margin:12px auto 0}
+.sc-lf{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;text-align:left}
+.sc-gate .btn{width:auto;min-width:280px;margin-top:8px}
+.sc-gate small{display:block;font-size:13px;color:var(--muted);max-width:520px;margin:14px auto 0}
 .sc-cta{background:var(--soft);border-radius:var(--r-big);padding:48px 40px;margin-top:24px;text-align:center}
 .sc-cta h3{font-size:clamp(26px,3vw,36px)}
 .sc-cta p{max-width:600px;margin:14px auto 0;color:var(--muted)}
@@ -97,6 +103,7 @@
 .sc-again{display:block;margin:28px auto 0;background:none;border:0;font:600 15px var(--font);color:var(--t-ink);cursor:pointer;text-decoration:underline}
 .sc-note{font-size:13px;color:var(--muted);margin-top:24px;text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
 @media (max-width:820px){
+ .sc-lf{grid-template-columns:1fr}
  .sc-pillars{grid-template-columns:repeat(2,1fr)}
  .sc-nums{grid-template-columns:1fr}
  .sc-q fieldset{flex-direction:column;align-items:stretch;gap:12px}
@@ -108,7 +115,8 @@
  .sc-head{padding:56px 0 24px}
  .sc-block,.sc-card{padding:24px 20px}
  .sc-total,.sc-cta{padding:36px 20px}
- .sc-go .btn,.sc-cta .btn{width:100%;min-width:0;display:inline-flex}
+ .sc-go .btn,.sc-cta .btn,.sc-gate .btn{width:100%;min-width:0;display:inline-flex}
+ .sc-gate{padding:28px 20px}
 }
 </style>
 <main id="main">
@@ -116,7 +124,7 @@
 <span class="eyebrow">ATOM Practice Scorecard</span>
 <h1 class="display">Score your practice.</h1>
 <p class="lede">Answer 16 questions across accounting, team, operations and marketing. You'll see where your practice is strong, where it's leaking money and how your collections per treatment room compare with Elevate's client practices.</p>
-<div class="sc-meta"><span>About 3 minutes</span><span>No email needed</span><span>Your answers stay on your device</span></div>
+<div class="sc-meta"><span>About 3 minutes</span><span>Your score shows instantly</span><span>Free, no sales pitch</span></div>
 </div></section>
 
 <form class="sc-form" id="sc" novalidate><div class="sc-wrap">
@@ -136,7 +144,7 @@
 <div class="sc-go">
 <p class="sc-err" id="sc-err" role="alert"></p>
 <button class="btn btn-book" type="submit">See my score</button>
-<p>Free, instant and private. Nothing is sent to us.</p>
+<p>Your score shows right away. Nothing is sent to us unless you ask for your full results.</p>
 </div>
 </div></form>
 
@@ -149,6 +157,21 @@
 </div>
 <div class="sc-pillars" id="r-pillars"></div>
 
+<div class="sc-gate" id="sc-gate">
+<span class="eyebrow">Your full results</span>
+<h3>See your dollar gap and your first three fixes.</h3>
+<p>We'll show them here and email you a copy, so you can share it with your team or your CPA.</p>
+<form id="sc-lead" novalidate>
+<div class="sc-lf"><div class="sc-field"><label for="ld-fn">First name</label><input id="ld-fn" autocomplete="given-name" required></div>
+<div class="sc-field"><label for="ld-ln">Last name</label><input id="ld-ln" autocomplete="family-name" required></div>
+<div class="sc-field"><label for="ld-pr">Practice name</label><input id="ld-pr" autocomplete="organization" required></div>
+<div class="sc-field"><label for="ld-em">Email</label><input id="ld-em" type="email" autocomplete="email" required></div></div>
+<p class="sc-err" id="ld-err" role="alert"></p>
+<button class="btn btn-book" type="submit" id="ld-go">Show my full results</button>
+<small>We'll email your results and follow up about a free Snapshot Review. No spam, and you can unsubscribe anytime. <a href="/privacy-policy/">Privacy Policy</a></small>
+</form>
+</div>
+<div class="sc-locked" id="sc-locked" hidden>
 <div class="sc-card" id="r-room">
 <h3>Collections per treatment room</h3>
 <p>Monthly collections divided by the rooms you use, compared with 19 Elevate client practices over the last 12 months.</p>
@@ -160,6 +183,7 @@
 <h3>Your first three fixes</h3>
 <p>The answers that cost you the most points, with what we would do first.</p>
 <ol class="sc-fixes" id="r-fixes"></ol>
+</div>
 </div>
 
 <div class="sc-cta">
@@ -199,6 +223,9 @@ var ROOM_FIX2=['o','room','Push collections per room into the top quarter.','You
 var OVH_FIX=['a','ovh','Bring overhead under 60%.','Review overhead by category against dental benchmarks. Staff, supplies, lab and rent are where it usually hides.'];
 var OVH_UNK=['a','ovh','Know your overhead every month.','If you don\u2019t know your overhead, you can\u2019t control it. A monthly dental P&L shows it as a percentage of collections.'];
 
+var HOOK='https://services.leadconnectorhq.com/hooks/TaLk3UdgkEu3ZPj5d44t/webhook-trigger/b2b42327-d95b-47c9-a0a3-c11a17633c48';
+var LAST=null, REP='';
+try{var qs=new URLSearchParams(location.search);REP=qs.get('rep')||qs.get('am_id')||'';if(REP)localStorage.setItem('ep-rep',REP);else REP=localStorage.getItem('ep-rep')||'';}catch(x){}
 var host=document.getElementById('sc-qs'), html='';
 ['a','t','o','m'].forEach(function(k){
  html+='<div class="sc-block '+k+'"><span class="tag '+k+'">'+P[k]+'</span>';
@@ -258,9 +285,26 @@ form.addEventListener('submit',function(e){
  cand.forEach(function(i){if(fx.length<3&&fx.indexOf(i)<0)fx.push(i);});
  function split(t){var j=t.indexOf('. ');return j<0?[t,'']:[t.slice(0,j+1),t.slice(j+2)];}
  document.getElementById('r-fixes').innerHTML=fx.length?fx.map(function(i){var f=i.fix,sp=(f[1]==='room'||f[1]==='ovh')?[f[2],f[3]]:split(f[3]);return '<li><div><span class="tag '+i.k+'">'+P[i.k]+'</span><b>'+sp[0]+'</b>'+(sp[1]?'<p>'+sp[1]+'</p>':'')+'</div></li>';}).join(''):'<li><div><b>No obvious gaps from these answers.</b><p>The full scorecard checks the numbers behind them, which is where strong practices still find money.</p></div></li>';
- try{localStorage.setItem('ep-sc',JSON.stringify({t:total,a:sc.a,tm:sc.t,o:sc.o,m:sc.m,cpr:Math.round(cpr)}));}catch(x){}
+ var g=cpr&&cpr<TOP?Math.round((TOP-cpr)*rooms*12):0;
+ var roomLine=cpr?('Collections per treatment room: '+money(cpr)+' a month. Elevate\u2019s client median is $24,600 and the top quarter is $35,500 and up. '+(g>0?'If each room collected like the top quarter, that is about '+money(g)+' more a year.':'Your rooms already collect like the top quarter.')):'Add your monthly collections and treatment rooms on a Snapshot Review to see your collections per room against Elevate\u2019s client practices.';
+ var ovhSel=document.getElementById('ovh'); var ovhTxt=ovhSel.value?ovhSel.options[ovhSel.selectedIndex].text:'Not answered';
+ var ans=Q.map(function(q){var c=form.querySelector('input[name="q_'+q[1]+'"]:checked');return q[2]+' '+(c?['No','Partly','Yes'][+c.value]:'-');}).join(' | ');
+ LAST={atom_score:total,atom_accounting:sc.a,atom_team:sc.t,atom_operations:sc.o,atom_marketing:sc.m,monthly_collections:Math.round(col)||'',treatment_rooms:rooms||'',collections_per_room:Math.round(cpr)||'',yearly_room_gap:g||'',overhead:ovhTxt,
+  fixes:fx.map(function(i,n){var f=i.fix,sp=(f[1]==='room'||f[1]==='ovh')?[f[2],f[3]]:split(f[3]);return (n+1)+'. '+sp[0];}).join(' '),answers:ans,room_line:roomLine};
+ var unlocked=false; try{unlocked=localStorage.getItem('ep-sc-lead')==='1';}catch(x){}
+ document.getElementById('sc-gate').hidden=unlocked; document.getElementById('sc-locked').hidden=!unlocked;
  form.style.display='none'; res.classList.add('on');
  window.scrollTo({top:res.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'});
+});
+document.getElementById('sc-lead').addEventListener('submit',function(e){
+ e.preventDefault();
+ var v=function(id){return (document.getElementById(id).value||'').trim();};
+ var le=document.getElementById('ld-err'), em=v('ld-em');
+ if(!v('ld-fn')||!v('ld-pr')||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){le.textContent='Add your first name, practice name and a valid email.';return;}
+ le.textContent=''; var btn=document.getElementById('ld-go'); btn.disabled=true; btn.textContent='One moment\u2026';
+ var body=Object.assign({first_name:v('ld-fn'),last_name:v('ld-ln'),email:em,practice_name:v('ld-pr'),rep:REP,source:'ATOM Scorecard',page:location.href},LAST||{});
+ var done=function(){try{localStorage.setItem('ep-sc-lead','1');}catch(x){}document.getElementById('sc-gate').hidden=true;var l=document.getElementById('sc-locked');l.hidden=false;l.scrollIntoView({behavior:'smooth',block:'start'});};
+ fetch(HOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}).then(done,done);
 });
 document.getElementById('sc-again').addEventListener('click',function(){res.classList.remove('on');form.style.display='';form.scrollIntoView({behavior:'smooth'});});
 form.addEventListener('input',function(){ if(err.textContent) err.textContent=''; });
