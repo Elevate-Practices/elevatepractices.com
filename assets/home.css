@@ -42,7 +42,7 @@
 .hx-pill b{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:999px;background:var(--ink);color:#fff;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .hx-hero h1{font-size:clamp(40px,5vw,64px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:24px 0 22px}
 .hx-hero .lead{font-size:clamp(18px,1.6vw,20px);line-height:1.6;color:var(--body);max-width:560px}
-.hx-hero .lead .a{color:var(--lime-d);font-weight:600}.hx-hero .lead .t{color:var(--azure);font-weight:600}.hx-hero .lead .o{color:var(--violet);font-weight:600}.hx-hero .lead .m{color:var(--coral-d);font-weight:600}
+.hx-hero .lead .a,.hx-hero .lead .t,.hx-hero .lead .o,.hx-hero .lead .m{color:var(--ink);font-weight:600}
 .hx-hero .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .hx-ticks{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:18px;font-size:14.5px;color:var(--mut)}
 .hx-ticks span{display:inline-flex;align-items:center;gap:6px}
