@@ -13,14 +13,14 @@
 <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=pr1103b">
+<link rel="stylesheet" href="/assets/site.css?v=pr1123a">
 </head>
 <body class="has-chat">
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap top-in">
 <a class="brand" href="/" aria-label="Elevate Practices home"><img src="/assets/img/logo-color.png" alt="Elevate Practices" width="720" height="290"></a>
 <nav class="nav" aria-label="Main"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a></nav>
-<div class="top-cta"><a class="login" href="https://app.elevatepractices.com/">Client login</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book</a>
+<div class="top-cta"><a class="login" href="https://app.elevatepractices.com/">Client login</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Free assessment</a>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg></summary><nav class="menu-panel" aria-label="Mobile"><a href="/dental-accounting/">Accounting</a><a href="/dental-team-training/">Team</a><a href="/dental-operations/">Operations</a><a href="/dental-marketing/">Marketing</a><a href="/pricing/">Pricing</a><a href="/elevate-practices-management-team/">About</a><a href="/blog/">Blog</a><a href="https://app.elevatepractices.com/">Client login</a></nav></details></div>
 </div></header>
 <style>
@@ -164,7 +164,7 @@
 <h3>See your dollar gap and your first three fixes.</h3>
 <p>We'll show them here and email you a copy, so you can share it with your team or your CPA.</p>
 <div class="sc-ghl" id="sc-ghl"></div>
-<small>We'll email your results and follow up about a free Snapshot Review. No spam, and you can unsubscribe anytime. <a href="/privacy-policy/">Privacy Policy</a></small>
+<small>We'll email your results and follow up about a free practice assessment. No spam, and you can unsubscribe anytime. <a href="/privacy-policy/">Privacy Policy</a></small>
 </div>
 <div class="sc-locked" id="sc-locked" hidden>
 <div class="sc-card" id="r-room">
@@ -183,10 +183,10 @@
 
 <div class="sc-cta">
 <span class="eyebrow">Next step</span>
-<h3>Get your full scorecard on a free Snapshot Review.</h3>
+<h3>Get your full scorecard on a free practice assessment.</h3>
 <p>This quick version scores what you know off the top of your head. On a 45-minute call we score more than 20 numbers from your P&amp;L and practice software, show the dollar gap behind each one and hand you a one-page plan to keep.</p>
 <ul><li>Overhead by category</li><li>Collections and A/R</li><li>Hygiene and recare</li><li>Case acceptance</li><li>New patients by source</li><li>Website and Google profile</li></ul>
-<a class="btn btn-book" href="/book/">Book my free Snapshot Review</a>
+<a class="btn btn-book" href="/book/">Book my free practice assessment</a>
 <p>No cost and no commitment. Bring your numbers or we'll pull them with you.</p>
 </div>
 <button class="sc-again" type="button" id="sc-again">Change my answers</button>
@@ -281,7 +281,7 @@ form.addEventListener('submit',function(e){
  function split(t){var j=t.indexOf('. ');return j<0?[t,'']:[t.slice(0,j+1),t.slice(j+2)];}
  document.getElementById('r-fixes').innerHTML=fx.length?fx.map(function(i){var f=i.fix,sp=(f[1]==='room'||f[1]==='ovh')?[f[2],f[3]]:split(f[3]);return '<li><div><span class="tag '+i.k+'">'+P[i.k]+'</span><b>'+sp[0]+'</b>'+(sp[1]?'<p>'+sp[1]+'</p>':'')+'</div></li>';}).join(''):'<li><div><b>No obvious gaps from these answers.</b><p>The full scorecard checks the numbers behind them, which is where strong practices still find money.</p></div></li>';
  var g=cpr&&cpr<TOP?Math.round((TOP-cpr)*rooms*12):0;
- var roomLine=cpr?('Collections per treatment room: '+money(cpr)+' a month. Elevate\u2019s client median is $24,600 and the top quarter is $35,500 and up. '+(g>0?'If each room collected like the top quarter, that is about '+money(g)+' more a year.':'Your rooms already collect like the top quarter.')):'Add your monthly collections and treatment rooms on a Snapshot Review to see your collections per room against Elevate\u2019s client practices.';
+ var roomLine=cpr?('Collections per treatment room: '+money(cpr)+' a month. Elevate\u2019s client median is $24,600 and the top quarter is $35,500 and up. '+(g>0?'If each room collected like the top quarter, that is about '+money(g)+' more a year.':'Your rooms already collect like the top quarter.')):'Add your monthly collections and treatment rooms on a free practice assessment to see your collections per room against Elevate\u2019s client practices.';
  var ovhSel=document.getElementById('ovh'); var ovhTxt=ovhSel.value?ovhSel.options[ovhSel.selectedIndex].text:'Not answered';
  var ans=Q.map(function(q){var c=form.querySelector('input[name="q_'+q[1]+'"]:checked');return q[2]+' '+(c?['No','Partly','Yes'][+c.value]:'-');}).join(' | ');
  LAST={atom_score:total,atom_accounting:sc.a,atom_team:sc.t,atom_operations:sc.o,atom_marketing:sc.m,monthly_collections:Math.round(col)||'',treatment_rooms:rooms||'',collections_per_room:Math.round(cpr)||'',yearly_room_gap:g||'',overhead:ovhTxt,
@@ -316,12 +316,12 @@ form.addEventListener('input',function(){ if(err.textContent) err.textContent=''
 <p>37 W 1070 S<br>St. George, UT 84770</p><p style="margin-top:8px"><a href="tel:+14356809777">(435) 680-9777</a><br><a href="mailto:info@elevatepractices.com">info@elevatepractices.com</a></p>
 <div class="social"><a href="https://www.linkedin.com/company/elevate-practices" aria-label="Elevate Practices on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zm7 0h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.32-1.96 2.69V21h-4z"/></svg></a><a href="https://www.facebook.com/elevatepractices" aria-label="Elevate Practices on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a><a href="https://www.instagram.com/elevatepractices" aria-label="Elevate Practices on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 7.3A4.7 4.7 0 1 0 12 16.7 4.7 4.7 0 0 0 12 7.3zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21.9 8c-.1-1.6-.4-3-1.6-4.2S17.6 2.2 16 2.1C14.4 2 9.6 2 8 2.1 6.4 2.2 5 2.5 3.8 3.7S2.2 6.4 2.1 8C2 9.6 2 14.4 2.1 16c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4 0-8z"/></svg></a><a href="https://x.com/ElevatePractice" aria-label="Elevate Practices on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3H21l-7 8 8.2 10h-6.4l-5-6.2L5 21H1.8l7.5-8.6L1.5 3H8l4.6 5.7zm-1.1 16h1.8L7.4 4.9H5.5z"/></svg></a></div></div>
 <div><h2>Services</h2><ul><li><a href="/dental-accounting/">Accounting</a></li><li><a href="/dental-team-training/">Team training</a></li><li><a href="/dental-operations/">Operations</a></li><li><a href="/dental-marketing/">Marketing</a></li><li><a href="/de-novo-services/">De novo practices</a></li><li><a href="/accounts-receivable/">Insurance and collections</a></li></ul></div>
-<div><h2>Company</h2><ul><li><a href="/elevate-practices-management-team/">Our team</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/book/">Book a free assessment</a></li><li><a href="https://app.elevatepractices.com/">Client login</a></li></ul></div>
+<div><h2>Company</h2><ul><li><a href="/elevate-practices-management-team/">Our team</a></li><li><a href="/pricing/">Pricing</a></li><li><a href="/blog/">Blog</a></li><li><a href="/book/">Free practice assessment</a></li><li><a href="https://app.elevatepractices.com/">Client login</a></li></ul></div>
 <div><h2>Legal</h2><ul><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Service</a></li><li><a href="/dashboard-privacy/">Dashboards privacy</a></li><li><a href="/dashboard-terms/">Dashboards terms</a></li><li><a href="/sitemap/">Sitemap</a></li></ul></div>
 </div>
 <div class="legal"><span>© 2026 Elevate Practices. All rights reserved.</span><a href="/privacy-policy/">Privacy</a><a href="/terms/">Terms</a><a href="/sitemap/">Sitemap</a></div>
 </div></footer>
-<div class="dock"><a class="btn btn-quiet" href="tel:+14356809777"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Book online</a></div>
+<div class="dock"><a class="btn btn-quiet dock-call" href="tel:+14356809777" aria-label="Call"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a><a class="btn btn-book" href="/book/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5z"/></svg>Free assessment</a></div>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="68090188b75db5508153db49"></script>
 </body>
 </html>
